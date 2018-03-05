@@ -1,232 +1,171 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-weight: bold;
+h1,h2,h3,h4,h5 {
+    font-weight: 700
 }
 
-h1 {
-	font-size: 62px;
-	line-height: 68px;
+h1,h1:before {
+    font-size: 62px;
+    line-height: 68px
 }
 
-h1:before {
-	content: '— \a';
-	color: #FF000F;
-	font-size: 62px;
-	line-height: 68px;
-	white-space: pre;
+h2,h2:before {
+    font-size: 50px;
+    line-height: 56px
 }
 
-h2 {
-	font-size: 50px;
-	line-height: 56px;
-}
-
-h2:before {
-	content: '— \a';
-	color: #FF000F;
-	font-size: 50px;
-	line-height: 56px;
-	white-space: pre;
+h1:before,h2:before {
+    content: '— \a';
+    color: #ff000f;
+    white-space: pre
 }
 
 h3 {
-	font-size: 36px;
-	line-height: 40px;
+    font-size: 36px;
+    line-height: 40px
 }
 
 h4 {
-	font-size: 25px;
-	line-height: 32px;
+    font-size: 25px;
+    line-height: 32px
 }
 
-h5 {
-	font-size: 16px;
-	line-height: 24px;
+h5,p.medium {
+    font-size: 16px;
+    line-height: 24px
 }
 
 p {
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 30px;
-}
-
-p.medium {
-	font-size: 16px;
-	line-height: 24px;
+    font-size: 20px;
+    line-height: 30px
 }
 
 p.lead {
-	font-size: 32px;
-	font-weight: 300;
-	line-height: 40px;
+    font-size: 32px;
+    line-height: 40px
 }
 
 p.lead-medium {
-	font-size: 25px;
-	font-weight: 300;
-	line-height: 32px;
+    font-size: 25px;
+    line-height: 32px
 }
 
 p.lead-small {
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
+    font-size: 16px;
+    line-height: 24px
+}
+
+p.quote,p.quote:before {
+    font-size: 32px;
+    font-weight: 500
 }
 
 p.quote {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 40px;
+    line-height: 40px
 }
 
 p.quote:before {
-	content: '— \a';
-	color: #FF000F;
-	font-size: 32px;
-	font-weight: 500;
-	white-space: pre;
+    content: '— \a';
+    color: #ff000f;
+    white-space: pre
 }
 
 p.quote span:before {
-	content: '”';
+    content: '”'
 }
 
 p.quote span:after {
-	content: '“';
+    content: '“'
 }
 
-p.note {
-	color: #6E6E6E;
-	font-size: 15px;
-	line-height: 20px;
+p.category,p.note {
+    color: #6e6e6e;
+    font-size: 15px;
+    line-height: 20px
 }
 
 p.category {
-	color: #6E6E6E;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 16px;
-	text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
-    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 700
 }
 
-p.cta-button {
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 16px;
-    font-weight: bold;
+@media screen and (max-width:1280px) {
+    h1,h1:before {
+        font-size: 50px;
+        line-height: 56px
+    }
+
+    h2,h2:before,h3 {
+        font-size: 44px;
+        line-height: 48px
+    }
+
+    h1:before,h2:before {
+        content: '— \a';
+        color: #ff000f;
+        white-space: pre
+    }
 }
 
-@media screen and (max-width: 1280px) {
-	h1 {
-		font-size: 50px;
-		line-height: 56px;
-	}
-	h1:before {
-		content: '— \a';
-		color: #FF000F;
-		font-size: 50px;
-		line-height: 56px;
-		white-space: pre;
-	}
-	h2 {
-		font-size: 44px;
-		line-height: 48px;
-	}
-	h2:before {
-		content: '— \a';
-		color: #FF000F;
-		font-size: 44px;
-		line-height: 48px;
-		white-space: pre;
-	}
-	h3 {
-		font-size: 44px;
-		line-height: 48px;
-	}
-}
+@media screen and (max-width:768px) {
+    h1,h1:before {
+        font-size: 44px;
+        line-height: 48px
+    }
 
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 44px;
-		line-height: 48px;
-	}
-	h1:before {
-		content: '— \a';
-		color: #FF000F;
-		font-size: 44px;
-		line-height: 48px;
-		white-space: pre;
-	}
-	h2 {
-		font-size: 36px;
-		line-height: 40px;
-	}
-	h2:before {
-		content: '— \a';
-		color: #FF000F;
-		font-size: 36px;
-		line-height: 40px;
-		white-space: pre;
-	}
-	h3 {
-		font-size: 25px;
-		line-height: 32px;
-	}
-	h4 {
-		font-size: 16px;
-		line-height: 24px;
-	}
-	h5 {
-		font-size: 14px;
-		line-height: 20px;
-	}
-	p {
-		font-size: 16px;
-		font-weight: 300;
-		line-height: 24px;
-	}
-	p.medium {
-		font-size: 14px;
-		line-height: 20px;
-	}
-	p.lead {
-		font-size: 20px;
-		font-weight: 300;
-		line-height: 25px;
-	}
-	p.lead-medium {
-		font-size: 20px;
-		font-weight: 300;
-		line-height: 25px;
-	}
-	p.quote {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 25px;
-	}
-	p.quote:before {
-		content: '— \a';
-		color: #FF000F;
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 25px;
-		white-space: pre;
-	}
-	p.quote span:before {
-		content: '”';
-	}
-	p.quote span:after {
-		content: '“';
-	}
-	p.note {
-		color: #6E6E6E;
-		font-size: 14px;
-		line-height: 20px;
-	}
+    h2,h2:before {
+        font-size: 36px;
+        line-height: 40px
+    }
+
+    h1:before,h2:before {
+        content: '— \a';
+        color: #ff000f;
+        white-space: pre
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 32px
+    }
+
+    h4,p {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    h5,p.medium {
+        font-size: 14px;
+        line-height: 20px
+    }
+
+    p.lead,p.lead-medium,p.quote,p.quote:before {
+        font-size: 20px;
+        line-height: 25px
+    }
+
+    p.quote,p.quote:before {
+        font-weight: 500
+    }
+
+    p.quote:before {
+        content: '— \a';
+        color: #ff000f;
+        white-space: pre
+    }
+
+    p.quote span:before {
+        content: '”'
+    }
+
+    p.quote span:after {
+        content: '“'
+    }
+
+    p.note {
+        color: #6e6e6e;
+        font-size: 14px;
+        line-height: 20px
+    }
 }
