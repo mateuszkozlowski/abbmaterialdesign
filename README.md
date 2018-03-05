@@ -1,6 +1,6 @@
 # ABB Material Design
 
-![ABB Material Design](http://mateuszkozlowski.xyz/abbmaterialdesign/cover.png)
+![ABB Material Design](http://mateuszkozlowski.xyz/abbmaterialdesign/cover1.png)
 
 Material design framework version accordingly to ABB brand.
 
