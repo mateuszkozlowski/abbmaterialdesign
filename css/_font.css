@@ -2,37 +2,32 @@
     font-family: "ABBvoice";
     font-style: normal;
     font-weight: 100;
-    src: url(../fonts/ABBvoice_W_Lt.eot);
-    src: url(../fonts/ABBvoice_W_Lt.eot?#iefix) format("embedded-opentype"),url(../fonts/ABBvoice_W_Lt.woff) format("woff"),url(../fonts/ABBvoice_W_Lt.woff2) format("woff2")
+    src: url('../fonts/ABBvoice_W_Lt.eot');
+    src: url('../fonts/ABBvoice_W_Lt.eot?#iefix') format("embedded-opentype"),url('../fonts/ABBvoice_W_Lt.woff') format("woff"),url('../fonts/ABBvoice_W_Lt.woff2') format("woff2")
 }
 
 @font-face {
-    font-family:"ABBvoice";
-    font-style:normal;
-    font-weight:300;
-    src:url(../fonts/ABBvoice_W_Rg.eot);
-    src:url(../fonts/ABBvoice_W_Rg.eot?#iefix) format("embedded-opentype"),url(../fonts/ABBvoice_W_Rg.woff) format("woff"),url(../fonts/ABBvoice_W_Rg.woff2) format("woff2")
+    font-family:"ABBvoice";font-style:normal;font-weight:300;src:url('../fonts/ABBvoice_W_Rg.eot');
+    src:url('../fonts/ABBvoice_W_Rg.eot?#iefix') format("embedded-opentype"),url('../fonts/ABBvoice_W_Rg.woff') format("woff"),url('../fonts/ABBvoice_W_Rg.woff2') format("woff2")
 }
 
 @font-face {
-    font-family:"ABBvoice";
-    font-style:normal;
-    font-weight:500;
-    src:url(../fonts/ABBvoice_W_Md.eot);
-    src:url(../fonts/ABBvoice_W_Md.eot?#iefix) format("embedded-opentype"),url(../fonts/ABBvoice_W_Md.woff) format("woff"),url(../fonts/ABBvoice_W_Md.woff2) format("woff2")
+    font-family:"ABBvoice";font-style:normal;font-weight:500;src:url('../fonts/ABBvoice_W_Md.eot');
+    src:url('../fonts/ABBvoice_W_Md.eot?#iefix') format("embedded-opentype"),url('../fonts/ABBvoice_W_Md.woff') format("woff"),url('../fonts/ABBvoice_W_Md.woff2') format("woff2")
 }
 
 @font-face {
-    font-family:"ABBvoice";
-    font-style:normal;
-    font-weight:700;
-    src:url(../fonts/ABBvoice_W_Bd.eot);src:url(../fonts/ABBvoice_W_Bd.eot?#iefix) format("embedded-opentype"),url(../fonts/ABBvoice_W_Bd.woff) format("woff"),url(../fonts/ABBvoice_W_Bd.woff2) format("woff2")
+    font-family:"ABBvoice";font-style:normal;font-weight:700;src:url('../fonts/ABBvoice_W_Bd.eot');
+    src:url('../fonts/ABBvoice_W_Bd.eot?#iefix') format("embedded-opentype"),url('../fonts/ABBvoice_W_Bd.woff') format("woff"),url('../fonts/ABBvoice_W_Bd.woff2') format("woff2")
 }
 
 @font-face {
-    font-family: "ABBicons";
-    font-style: normal;
-    font-weight:400;
-    src: url(../fonts/ABBicons.ttf") format("ttf");
-    src: url(../fonts/ABBicons.woff) format("woff")
+    font-family:"ABBicons";font-style:normal;font-weight:400; src: url('../fonts/ABBicons.woff') format("woff")
+}
+
+body {
+    color: #262626;
+    font-family: "ABBvoice",sans-serif;
+    margin: 0;
+    font-weight: 100
 }

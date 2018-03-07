@@ -1,3 +1,5 @@
+/*forms*/
+
 .switch {
     margin-top: 18px;
     margin-bottom: 24px
@@ -48,4 +50,131 @@
 .switch>input[type=checkbox]:checked+label::after {
     background: #fff;
     left: 20px
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 48px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;	line-height: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio and checkbox button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    font-size: 16px;	line-height: 24px;
+    padding-left: 48px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    
+
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #a9a9a9;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ff000f;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+   -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:checked + label:before {
+    
+    border: 2px solid #ff000f;    
+}
+/* Create a custom checkmark button */
+
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border: 2px solid #a9a9a9;
+        -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.container:hover input ~ .checkmark {
+    border: 2px solid #ff000f;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ff000f;
+  border: 2px solid #ff000f;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
 }
